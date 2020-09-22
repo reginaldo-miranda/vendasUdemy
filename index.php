@@ -85,8 +85,7 @@ if ($_POST) {
             <?php
             
            switch($_GET['erro']) {
-         
-
+                    
                 case 1:
                     echo '<a href="#" class="btn btn-default btn-block"  value="">Erro de login e senha </a>';
                     break;
