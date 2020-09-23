@@ -2,7 +2,7 @@
 
 //header('Content-Type:text/html;charset=UTF-8');
 header('Content-type: text/html; charset=utf-8');
-error_reporting(E_ALL ^ E_NOTICE);
+///error_reporting(E_ALL ^ E_NOTICE);
 
 if ($_POST) {
 
@@ -83,17 +83,18 @@ if ($_POST) {
                 <button class="btn btn-lg btn-primary btn-block" type="submit"> <i class="fa fa-sign-in"></i> Entrar no sistema</button>
             </form>
             <?php
-            
-           switch($_GET['erro']) {
-                    
+             if (isset($_GET['erro'])) {
+             switch ($_GET['erro']) {
+
                 case 1:
-                    echo '<a href="#" class="btn btn-default btn-block"  value="">Erro de login e senha </a>';
+                    echo '<a href="erro" class="btn btn-default btn-block"  value="submit">Erro de login e senha </a>';
                     break;
 
                 case 2:
-                    echo '<a href="#" class="btn btn-danger btn-block"  value="">Impossível acessar a página sem login </a>';
+                    echo '<a href="erro" class="btn btn-danger btn-block"  value="submit">Impossível acessar a página sem login </a>';
                     break;
-                    
+                    default:
+            }
             }
             ?>
 
