@@ -62,7 +62,7 @@ if (!Util::session_existe()) {
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">Curso AppVendas Administração de Vendas Seja Bem vindos...</h1>
+                        <h1 class="page-header">Administração de Vendas Seja Bem vindos...</h1>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
